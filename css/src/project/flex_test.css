@@ -1,0 +1,24 @@
+/* flex_test.css */
+/*body,html{width: 100%; height: 100%;}*/
+.wrap{width: 1200px; height: 1000px; background-color: #ddd; margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: column;
+}
+.flex_con{
+  width: 100px;
+  height: 100px;
+  background-color: #ddf;
+
+}
+/*
+justify-content속성은 플렉스 항목을 정렬
+align-items속성은 플렉스 항목을 세로로 정렬
+align-content속성은 플렉스 라인을 정렬
+flex-direction속성은 컨테이너가 플렉스 항목을 쌓을 방향
+flex-wrap속성은 플렉스 항목을 감쌀 지 여부를 지정
+order속성은 flex 항목의 순서를 지정
+
+*/

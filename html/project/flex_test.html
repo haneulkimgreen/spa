@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- scroll_section_tab.html -->
+<!-- flex_test.html -->
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
@@ -17,38 +17,28 @@
   <link rel="stylesheet" href="../../css/base/reset.css">
   <link rel="stylesheet" href="../../css/base/common.css">
   <!-- use css -->
-  <link rel="stylesheet" href="../../css/src/project/scroll_section_tab.css">
+  <link rel="stylesheet" href="../../css/src/project/flex_test.css">
   <!-- faviconFile -->
   <!-- <link rel="apple-touch-icon" href="../img/main/favicon.png"> -->
   <!-- <link rel="shortcut icon" href="../img/main/favicon.png" type="image/x-icon"> -->
-  <title>스크롤_구역에 따른 탭메뉴 변화</title>
+  <title>flex_test</title>
 
 </head>
 <body>
-  <section id="one">section One</section>
-  <section id="two">section Two</section>
-  <section id="three">section Three</section>
-  <section id="four">section Four</section>
-  <section id="five">section Five</section>
-  <nav>
-    <a href="#one">One</a>
-    <a href="#two">Two</a>
-    <a href="#three">Three</a>
-    <a href="#four">Four</a>
-    <a href="#five">Five</a>
-  </nav>
+  <div class="wrap">
+    <div class="flex_con" style="order: 3">1</div>
+    <div class="flex_con" style="order: 1">2</div>
+    <div class="flex_con" style="order: 2">3</div>
+    <div class="flex_con">4</div>
+    <div class="flex_con">5</div>
+    <div class="flex_con">6</div>
+  </div>
   <!-- script -->
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-  <script
-  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <!-- <script src="../js/base/jquery-3.2.1.js"></script> -->
   <!-- <script src="../js/base/jquery-ui.js"></script> -->
   <!-- use script(jQuery) -->
-  <script src="../../js/src/project/scroll_section_tab.js"></script>
+  <!-- <script src="../../js/src/project/flex_test.js"></script> -->
 </body>
 </html>
