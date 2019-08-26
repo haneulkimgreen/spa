@@ -1,10 +1,13 @@
 /* video_netflix.css */
 body,html{width: 100%; height: 100%; font-family: 'NanumBarunGothic', 'serif'}
 #wrap{overflow-y: hidden; position: absolute; width: 100%; height: 100%; background-color: #fff;}
-.videoWrap{
+.video_wrap{
   width: 100%;
   height: 100%;
   background-color: #000;
+}
+.video_guide{
+  color: #fff;
 }
 /* //videoWrap */
 .video_controller{
@@ -14,11 +17,50 @@ body,html{width: 100%; height: 100%; font-family: 'NanumBarunGothic', 'serif'}
   top: 0;
   left: 0;
 }
+.back_wrap{
+  position: absolute;
+  z-index: 100;
+  width: 90px;
+  height: 90px;
+  top: 10px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0);
+  /* 버튼 테스트용 */
+  /*background-color: rgba(255, 100, 255, 1);*/
+  color: #fff;
+}
+.back_i{
+  float: left;
+  width: 90px;
+  height: 90px;
+  font-size: 40px;
+  line-height: 90px;
+}
+.back_wrap i{
+  transition: all 200ms ease;
+}
+.back_txt{
+  display: none;
+  float: left;
+  font-size: 24px;
+  line-height: 90px;
+}
+.back_wrap:hover{
+  width: 200px;
+}
+.back_wrap:hover .back_txt{
+  display: block;
+}
+.back_wrap:hover i{
+  transform: scale3d(1.3, 1.3, 1);
+}
 .player_wrap{
   position: absolute;
+  z-index: 100;
   width: 100%;
   height: 100px;
-  background-color: rgba(255, 255, 255, 0);
+  /* 버튼 테스트용 */
+  /*background-color: rgba(255, 100, 255, 1);*/
   bottom: 0;
   left: 0;
   padding-bottom: 10px;
@@ -62,14 +104,64 @@ body,html{width: 100%; height: 100%; font-family: 'NanumBarunGothic', 'serif'}
   font-size: 30px;
 }
 .player_question{
+  position: relative;
   font-size: 42px;
 }
+.player_question:hover .question_hover{
+  display: block;
+}
+.question_hover{
+  display: none;
+  position: absolute;
+  width: 450px;
+  height: 80px;
+  top: 0;
+  right: 0;
+  margin-top: -80px;
+  border-radius: 8px;
+  background-color: #262626;
+  font-size: 24px;
+  line-height: 80px;
+}
+.question_hover:hover{
+  text-decoration: underline;
+}
 .player_bubble{
-  width: 90px;
-  height: 90px;
+  position: relative;
   font-size: 40px;
+}
+.player_bubble:hover .bubble_hover{
+  display: block;
+}
+.bubble_hover{
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 80px;
+  top: 0;
+  right: 0;
+  margin-top: -80px;
+  border-radius: 8px;
+  background-color: #262626;
+  font-size: 24px;
+  line-height: 80px;
+}
+.bubble_hover li{
+  float: left;
+  width: 50%;
+  height: 100%;
 }
 .player_screen{
   font-size: 40px;
-} 
+}
+.back_play,
+.back_pause{
+  width: 100%;
+  height: 100%;
+  /* 버튼 테스트용 */
+  /*background-color: rgba(255, 255, 255, 0.3);*/
+}
+.back_play{
+  display: none;
+}
 /* //video_controller */ 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- video_netflix.html -->
+<!-- video_test.html -->
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
@@ -17,57 +17,45 @@
   <link rel="stylesheet" href="../../css/base/reset.css">
   <link rel="stylesheet" href="../../css/base/common.css">
   <!-- use css -->
-  <link rel="stylesheet" href="../../css/src/project/video_netflix.css">
+  <link rel="stylesheet" href="../../css/src/project/video_test.css">
   <!-- faviconFile -->
-  <link rel="apple-touch-icon" href="../../img/favicon.png">
-  <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
+  <!-- <link rel="apple-touch-icon" href="../img/main/favicon.png"> -->
+  <!-- <link rel="shortcut icon" href="../img/main/favicon.png" type="image/x-icon"> -->
   <!-- script -->
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <title>넷플릭스(비디오 컨텐츠)</title>
+  <title>video_test</title>
 </head>
 <body>
   <div id="wrap">
-    <div class="video_wrap">
-      <video id="videoSample" loop="loop" preload="auto" width="100%" height="100%" muted>
+    <div class="videoWrap">
+      <video id="videoSample" loop="loop" preload="auto" width="100%" height="100%" muted="muted" controls>
         <source src="../../video/netflix_sample.mp4" type="video/mp4">
       </video>
-      <span class="video_guide">비디오를 지원하지 않는 형식입니다. 브라우저 버전을 확인해 주세요.</span>
+      <div id="video-controls">
+        <button type="button" id="play" class="play">Play</button>
+        <input type="range" id="seekBar" value="0">
+        <button type="button" id="mute">Mute</button>
+        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+        <button type="button" id="fullScreen" width="50px">Full-Screen</button>
+    </div>
     </div>
     <!-- //videoWrap -->
-    <div class="video_controller">
-      <button type="button" class="back_wrap">
-        <div class="back_i">
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-        </div>
-        <span class="back_txt">뒤로가기</span>
-      </button>
+    <!-- <div class="video_controller">
       <div class="player_wrap">
         <button type="button" class="player_play"><i class="fa fa-play" aria-hidden="true"></i></button>
         <button type="button" class="player_pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
         <button type="button" class="player_back"><i class="fa fa-backward" aria-hidden="true"></i></button>
         <button type="button" class="player_forward"><i class="fa fa-forward" aria-hidden="true"></i></button>
         <div class="player_title">넷플릭스 샘플 재생</div>
-        <button type="button" class="player_question">
-          <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-          <div class="question_hover">문제가 있나요? Netflix에 알려주세요.</div>
-        </button>
-        <button type="button" class="player_bubble">
-          <i class="fa fa-commenting" aria-hidden="true"></i>
-          <ul class="bubble_hover">
-            <li>더빙</li>
-            <li>자막</li>
-          </ul>
-        </button>
+        <button type="button" class="player_question"><i class="fa fa-question-circle-o" aria-hidden="true"></i></button>
+        <button type="button" class="player_bubble"><i class="fa fa-commenting" aria-hidden="true"></i></button>
         <button type="button" class="player_screen"><i class="fa fa-arrows-alt" aria-hidden="true"></i></button>
       </div>
-      <!-- 버튼과 마찬가지로 play를 누르면 play되게 -->
-      <div class="back_play"></div>
-      <div class="back_pause"></div>
-    </div>
+    </div> -->
     <!-- //video_controller -->
   </div>
   <!-- use script(jQuery) -->
-  <script src="../../js/src/project/video_netflix.js"></script>
+  <script src="../../js/src/project/video_test.js"></script>
 </body>
 </html>
