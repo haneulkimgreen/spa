@@ -1,0 +1,152 @@
+/* main.css */
+/* reset.css */
+html,body{width: 100%; height: 100%; margin:0; padding:0; color:#fff; font-size:16px; font-size:1rem;
+font-family: 'Noto Sans KR', sans-serif;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;}
+h1,h2,h3,h4,h5,h6,p,pre,ul,ol,li,dl,dt,dd,div,
+table,thead,tbody,tfoot,tr,th,td,
+form,fieldset,legend,input,textarea,select
+a, img,figcaption,figure{
+    margin:0; padding:0; border:0; outline:0;
+    color:inherit;
+    font-size:inherit; font-family: inherit;}
+table,tr,td,th,thead,tbody,tfoot{border-collapse:collapse; border-spacing:0;}
+thead{background-color:#d07; color: #fff; text-indent: 0;}
+tbody>tr:nth-of-type(2n+1){background-color: #faa;text-indent:0.5rem;}
+tbody>tr:nth-of-type(2n){background-color: #fff;text-indent:0.5rem;}
+tfoot{background-color: #7cf; font-weight: bold;}
+th,td{border:1px solid #777; border-left:0; border-right:0;}
+ul,ol,li{list-style:none;}
+a{text-decoration:none;}
+body,html{width: 100%; height: 100%;}
+/* //reset.css */
+#wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #aaa;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-image: url('../../../../img/mong/main_back.jpg');
+  
+}
+.user_name{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.user_name p{
+  width: 100%;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 50px;
+}
+.contents{
+  width: 100%;
+  height: 400px;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.buy_ticket{
+  width: 100%;
+  height: 200px;
+  padding: 40px 0;
+  border-bottom: 1px solid #fff;
+  box-sizing: border-box;
+}
+.use_ticket{
+  width: 100%;
+  height: 200px;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+.buy_icon,
+.use_icon{
+  position: relative;
+  float: left;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+}
+.buy_icon{
+  background-image: url('../../../../img/mong/main_buy_icon.png');
+}
+.use_icon{
+  background-image: url('../../../../img/mong/main_use_icon.png');
+}
+.buy_count,
+.use_count{
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  line-height: 36px;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.7);
+}
+.buy_ticket dl,
+.use_ticket dl{
+  float: left;
+  margin: 30px 0 0 20px;
+}
+.buy_ticket dl dt,
+.use_ticket dl dt{
+  font-size: 24px;
+  font-weight: 700;
+}
+.buy_ticket dl dd,
+.use_ticket dl dd{
+  font-size: 16px;
+  color: #ddd;
+}
+.buy_ticket a,
+.use_ticket a{
+  float: right;
+  width: 60px;
+  height: 60px;
+  margin-top: 30px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.buy_ticket a i,
+.use_ticket a i{
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  line-height: 60px;
+}
+.guide_bottom{
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  padding-left: 40px;
+  box-sizing: border-box;
+  background-color: rgba(98, 155, 234, 0.7);
+}
+.guide_bottom i{
+  float: left;
+  font-size: 24px;
+  line-height: 50px;
+}
+.guide_bottom p{
+  float: left;
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 50px;
+}
