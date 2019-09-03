@@ -31,12 +31,30 @@ body,html{width: 100%; height: 100%;}
   background-color: #ddd;
 }
 .banner_wrap{
+  overflow: hidden;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url('../../../../img/mong/splash09_01.jpg');
+}
+.banner_wrap ul{
+  width: 300vw;
+  height: 100%;
+}
+.banner_wrap ul li{
+  float: left;
+  width: 100vw;
+  height: 100%;
+}
+.banner_wrap ul li:nth-child(1){
+  background-color: #aad;
+}
+.banner_wrap ul li:nth-child(2){
+  background-color: #ccd;
+}
+.banner_wrap ul li:nth-child(3){
+  background-color: #ddc;
 }
 .btn_wrap{
   position: absolute;
