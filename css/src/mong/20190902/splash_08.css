@@ -1,0 +1,532 @@
+/* splash_08.css */
+/* reset.css */
+html,body{width: 100%; height: 100%; margin:0; padding:0; color:#fff; font-size:16px; font-size:1rem;
+font-family: 'Noto Sans KR', sans-serif;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;}
+h1,h2,h3,h4,h5,h6,p,pre,ul,ol,li,dl,dt,dd,div,
+table,thead,tbody,tfoot,tr,th,td,
+form,fieldset,legend,input,textarea,select
+a,button,img,figcaption,figure{
+    margin:0; padding:0; border:0; outline:0;
+    color:inherit;
+    font-size:inherit; font-family: inherit;}
+th,td{border:1px solid #777; border-left:0; border-right:0;}
+ul,ol,li{list-style:none;}
+a{text-decoration:none;}
+body,html{width: 100%; height: 100%;}
+/* //reset.css */
+/* 오래된 모바일용(갤럭시s5 기준, 화면이 작은 핸드폰) */
+@media screen and (max-width: 454px){
+#wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+#banner_box{
+  position: relative;
+  width: 100%;
+  height: 56.25vw;
+  background-color: #ddd;
+}
+.banner_wrap{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../../../img/mong/splash09_01.jpg');
+}
+.btn_wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.back_btn,
+.heart{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.back_btn{
+  float: left;
+  margin-left: 10px;
+}
+.heart{
+  float: right;
+  margin-right: 10px;
+  text-align: center;
+}
+#contentBox{
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.select_wrap{
+  width: 100%;
+  height: 160px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.select_con{
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 7px #ccc;
+}
+.edge{
+  float: left;
+  width: 10px;
+  height: 100%;
+  background-color: #5971f2;
+}
+.price_wrap{
+  float: left;
+  width: 120px;
+  height: 100%;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.price_wrap p{
+  color: #000;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+.pr_or{
+  display: inline-block;
+  width: 100%;
+  color: #777;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: line-through;
+}
+.pr_ds{
+  display: inline-block;
+  width: 100%;
+  color: #000;
+  text-align: center;
+}
+.select_btn{
+  display: flex;
+  align-items: center;
+  float: right;
+  width: 130px;
+  height: 100%;
+}
+.minus_btn,
+.plus_btn{
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  background-color: #5971f2;
+}
+.num{
+  float: left;
+  width: 40px;
+  height: 50px;
+  color: #5971f2;
+  font-size: 24px;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.txt{
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #649AEA;
+}
+.name{
+  width: 100%;
+  height: 50px;
+  margin-top: 60px;
+  border: 1px solid #649AEA;
+  box-sizing: border-box;
+  color: #5971f2;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.info_wrap{
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #5971f2;
+}
+.info_price{
+  float: left;
+}
+.info_price p{
+  font-size: 14px;
+  line-height: 26px;
+}
+.info_price>span{
+  font-size: 12px;
+}
+.info_icon{
+  float: right;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../../../img/mong/splash08_icon.png');
+}
+}
+/* //오래된 모바일용(갤럭시s5 기준, 화면이 작은 핸드폰) */
+/* 모바일 갤럭시 s9, s10(w:550px, h:850px기준으로 작업) */
+@media screen and (min-width: 455px) and (max-width:550px){
+#wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+#banner_box{
+  position: relative;
+  width: 100%;
+  height: 56.25vw;
+  background-color: #ddd;
+}
+.banner_wrap{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../../../img/mong/splash09_01.jpg');
+}
+.btn_wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.back_btn,
+.heart{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.back_btn{
+  float: left;
+  margin-left: 10px;
+}
+.heart{
+  float: right;
+  margin-right: 10px;
+  text-align: center;
+}
+#contentBox{
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.select_wrap{
+  width: 100%;
+  height: 160px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.select_con{
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 7px #ccc;
+}
+.edge{
+  float: left;
+  width: 10px;
+  height: 100%;
+  background-color: #5971f2;
+}
+.price_wrap{
+  float: left;
+  width: 120px;
+  height: 100%;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.price_wrap p{
+  color: #000;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+.pr_or{
+  display: inline-block;
+  width: 100%;
+  color: #777;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: line-through;
+}
+.pr_ds{
+  display: inline-block;
+  width: 100%;
+  color: #000;
+  text-align: center;
+}
+.select_btn{
+  display: flex;
+  align-items: center;
+  float: right;
+  width: 130px;
+  height: 100%;
+}
+.minus_btn,
+.plus_btn{
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  background-color: #5971f2;
+}
+.num{
+  float: left;
+  width: 40px;
+  height: 50px;
+  color: #5971f2;
+  font-size: 24px;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.txt{
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #649AEA;
+}
+.name{
+  width: 100%;
+  height: 50px;
+  margin-top: 60px;
+  border: 1px solid #649AEA;
+  box-sizing: border-box;
+  color: #5971f2;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.info_wrap{
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #5971f2;
+}
+.info_price{
+  float: left;
+}
+.info_price p{
+  font-size: 14px;
+  line-height: 26px;
+}
+.info_price>span{
+  font-size: 12px;
+}
+.info_icon{
+  float: right;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../../../img/mong/splash08_icon.png');
+}
+}
+/* //모바일 갤럭시 s9, s10(w:550px, h:850px기준으로 작업) */
+/* 태블릿(아이패드, 노트 등) */
+@media screen and (min-width: 551px) {
+#wrap{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+#banner_box{
+  position: relative;
+  width: 100%;
+  height: 56.25vw;
+  background-color: #ddd;
+}
+.banner_wrap{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../../../img/mong/splash09_01.jpg');
+}
+.btn_wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.back_btn,
+.heart{
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.back_btn{
+  float: left;
+  margin-left: 20px;
+}
+.heart{
+  float: right;
+  margin-right: 20px;
+  text-align: center;
+}
+#contentBox{
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.select_wrap{
+  width: 100%;
+  height: 200px;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+.select_con{
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 7px #ccc;
+}
+.edge{
+  float: left;
+  width: 10px;
+  height: 100%;
+  background-color: #5971f2;
+}
+.price_wrap{
+  float: left;
+  width: 120px;
+  height: 100%;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.price_wrap p{
+  color: #000;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+.pr_or{
+  display: inline-block;
+  width: 100%;
+  color: #777;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: line-through;
+}
+.pr_ds{
+  display: inline-block;
+  width: 100%;
+  color: #000;
+  text-align: center;
+}
+.select_btn{
+  display: flex;
+  align-items: center;
+  float: right;
+  width: 130px;
+  height: 100%;
+}
+.minus_btn,
+.plus_btn{
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  background-color: #5971f2;
+}
+.num{
+  float: left;
+  width: 40px;
+  height: 50px;
+  color: #5971f2;
+  font-size: 24px;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.txt{
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #649AEA;
+}
+.name{
+  width: 100%;
+  height: 70px;
+  margin-top: 60px;
+  border: 1px solid #649AEA;
+  box-sizing: border-box;
+  color: #5971f2;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.info_wrap{
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #5971f2;
+}
+.info_price{
+  float: left;
+}
+.info_price p{
+  font-size: 18px;
+  line-height: 28px;
+}
+.info_price>span{
+  font-size: 16px;
+}
+.info_icon{
+  float: right;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../../../img/mong/splash08_icon.png');
+}
+}
+/* //태블릿(아이패드, 노트 등) */
