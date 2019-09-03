@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- fontAwesome and Font -->
   <link rel="stylesheet" href="../../../fontawesome5.10.2/css/all.css">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="../../../css/src/mong/20190902/swiper.min.css">
   <!-- use css -->
   <link rel="stylesheet" href="../../../css/src/mong/20190902/splash_08.css">
   <!-- faviconFile -->
@@ -16,19 +17,25 @@
   <!-- script -->
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- Swiper -->
+  <script src="../../../js/src/mong/swiper.min.js"></script>
   <title>splash_08</title>
 
 </head>
 <body>
   <div id="wrap">
     <div id="banner_box">
-      <div class="banner_wrap">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+      <!-- Swiper -->
+      <div class="swiper-container banner_wrap">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide01 slide_list"></div>
+          <div class="swiper-slide slide02 slide_list"></div>
+          <div class="swiper-slide slide03 slide_list"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
+      <!-- //Swiper -->
       <div class="btn_wrap">
         <button type="button" class="back_btn">
           <i class="fas fa-arrow-left"></i>
@@ -72,6 +79,14 @@
     </div>
   </div>
   <!-- //wrap -->
+  <script>
+    // Swiper
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
   <!-- use script(jQuery) -->
   <!-- <script src="../js/splash_08.js"></script> -->
 </body>

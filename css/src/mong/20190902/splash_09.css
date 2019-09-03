@@ -1,9 +1,10 @@
 /* splash_09.css */
 /* reset.css */
 html,body{width: 100%; height: 100%; margin:0; padding:0; color:#fff; font-size:16px; font-size:1rem;
-font-family: 'Noto Sans KR', sans-serif;
+font-family: 'BMJUA', sans-serif;
       -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;}
+@font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
 h1,h2,h3,h4,h5,h6,p,pre,ul,ol,li,dl,dt,dd,div,
 table,thead,tbody,tfoot,tr,th,td,
 form,fieldset,legend,input,textarea,select
@@ -37,7 +38,7 @@ body::-webkit-scrollbar{
 }
 #headBox p{
   font-size: 22px;
-  font-weight: bold;
+  line-height: 28px;
   margin-left: 10%;
 }
 .btn_wrap{
@@ -77,10 +78,10 @@ body::-webkit-scrollbar{
   height: 100%;
   color: #ddd;
   text-align: center;
+  box-sizing: border-box;
 }
 .gnb ul li:hover{
   border-bottom: 1px solid #ddd;
-  box-sizing: border-box;
   color: #fff;
 }
 .gnb ul li button{
@@ -176,11 +177,12 @@ body::-webkit-scrollbar{
 }
 .list_info dl dt{
   font-size: 22px;
-  font-weight: bold;
+  line-height: 32px;
   color: #fff;
 }
 .list_info dl dd{
   font-size: 14px;
+  line-height: 26px;
   color: #ddd;
 }
 .count_wrap{
@@ -198,7 +200,6 @@ body::-webkit-scrollbar{
   color: #5971f2;
   text-align: center;
   line-height: 60px;
-  font-weight: bold;
   background-color: #fff;
 }
 .count_wrap i{
@@ -225,8 +226,8 @@ body::-webkit-scrollbar{
   background-image: linear-gradient(to right, #5971f2, #62c1fd);
 }
 #headBox p{
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 26px;
+  line-height: 34px;
   margin-left: 10%;
 }
 .btn_wrap{
@@ -365,11 +366,12 @@ body::-webkit-scrollbar{
 }
 .list_info dl dt{
   font-size: 22px;
-  font-weight: bold;
+  line-height: 32px;
   color: #fff;
 }
 .list_info dl dd{
   font-size: 14px;
+  line-height: 26px;
   color: #ddd;
 }
 .count_wrap{
@@ -387,7 +389,6 @@ body::-webkit-scrollbar{
   color: #5971f2;
   text-align: center;
   line-height: 60px;
-  font-weight: bold;
   background-color: #fff;
 }
 .count_wrap i{
@@ -414,8 +415,8 @@ body::-webkit-scrollbar{
   background-image: linear-gradient(to right, #5971f2, #62c1fd);
 }
 #headBox p{
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
   margin-left: 10%;
 }
 .btn_wrap{
@@ -437,6 +438,7 @@ body::-webkit-scrollbar{
 }
 .gps_btn{
   float: right;
+  text-align: center;
   margin-right: 20px;
 }
 .gnb{
@@ -556,12 +558,13 @@ body::-webkit-scrollbar{
   height: 100%;
 }
 .list_info dl dt{
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 26px;
+  line-height: 34px;
   color: #fff;
 }
 .list_info dl dd{
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 26px;
   color: #ddd;
 }
 .count_wrap{
@@ -579,7 +582,6 @@ body::-webkit-scrollbar{
   color: #5971f2;
   text-align: center;
   line-height: 60px;
-  font-weight: bold;
   background-color: #fff;
 }
 .count_wrap i{

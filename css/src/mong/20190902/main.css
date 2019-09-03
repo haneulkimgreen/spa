@@ -1,9 +1,10 @@
 /* main.css */
 /* reset.css */
 html,body{width: 100%; height: 100%; margin:0; padding:0; color:#fff; font-size:16px; font-size:1rem;
-font-family: 'Noto Sans KR', sans-serif;
+font-family: 'BMJUA', sans-serif;
       -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;}
+@font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
 h1,h2,h3,h4,h5,h6,p,pre,ul,ol,li,dl,dt,dd,div,
 table,thead,tbody,tfoot,tr,th,td,
 form,fieldset,legend,input,textarea,select
@@ -40,7 +41,6 @@ body,html{width: 100%; height: 100%;}
 .user_name p{
   width: 100%;
   font-size: 28px;
-  font-weight: bold;
   line-height: 40px;
 }
 .contents{
@@ -71,13 +71,15 @@ body,html{width: 100%; height: 100%;}
   border-radius: 50%;
   background-color: #fff;
   background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: center;
 }
 .buy_icon{
+  background-size: 70%;
+  background-position: center;
   background-image: url('../../../../img/mong/main_buy_icon.png');
 }
 .use_icon{
+  background-size: 70%;
+  background-position: 10px center;
   background-image: url('../../../../img/mong/main_use_icon.png');
 }
 .buy_count,
@@ -101,7 +103,6 @@ body,html{width: 100%; height: 100%;}
 .buy_ticket dl dt,
 .use_ticket dl dt{
   font-size: 22px;
-  font-weight: 700;
 }
 .buy_ticket dl dd,
 .use_ticket dl dd{
@@ -173,7 +174,6 @@ body,html{width: 100%; height: 100%;}
 .user_name p{
   width: 100%;
   font-size: 32px;
-  font-weight: bold;
   line-height: 50px;
 }
 .contents{
@@ -204,13 +204,15 @@ body,html{width: 100%; height: 100%;}
   border-radius: 50%;
   background-color: #fff;
   background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: center;
 }
 .buy_icon{
+  background-size: 70%;
+  background-position: center;
   background-image: url('../../../../img/mong/main_buy_icon.png');
 }
 .use_icon{
+  background-size: 70%;
+  background-position: 10px center;
   background-image: url('../../../../img/mong/main_use_icon.png');
 }
 .buy_count,
@@ -233,7 +235,6 @@ body,html{width: 100%; height: 100%;}
 .buy_ticket dl dt,
 .use_ticket dl dt{
   font-size: 24px;
-  font-weight: 700;
 }
 .buy_ticket dl dd,
 .use_ticket dl dd{
@@ -305,7 +306,6 @@ body,html{width: 100%; height: 100%;}
 .user_name p{
   width: 100%;
   font-size: 32px;
-  font-weight: bold;
   line-height: 50px;
 }
 .contents{
@@ -336,13 +336,15 @@ body,html{width: 100%; height: 100%;}
   border-radius: 50%;
   background-color: #fff;
   background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: center;
 }
 .buy_icon{
+  background-size: 70%;
+  background-position: center;
   background-image: url('../../../../img/mong/main_buy_icon.png');
 }
 .use_icon{
+  background-size: 70%;
+  background-position: 10px center;
   background-image: url('../../../../img/mong/main_use_icon.png');
 }
 .buy_count,
@@ -365,7 +367,6 @@ body,html{width: 100%; height: 100%;}
 .buy_ticket dl dt,
 .use_ticket dl dt{
   font-size: 24px;
-  font-weight: 700;
 }
 .buy_ticket dl dd,
 .use_ticket dl dd{
