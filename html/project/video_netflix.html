@@ -29,8 +29,8 @@
 <body>
   <div id="wrap">
     <div class="video_wrap">
-      <video id="videoSample" loop="loop" preload="auto" width="100%" height="100%" muted>
-        <source src="../../video/netflix_sample.mp4" type="video/mp4">
+      <video id="videoSample" loop="loop" preload="auto" width="100%" height="100%">
+        <source src="../../video/netflix_sample_고화질.mp4" type="video/mp4">
       </video>
       <span class="video_guide">비디오를 지원하지 않는 형식입니다. 브라우저 버전을 확인해 주세요.</span>
     </div>
@@ -43,10 +43,18 @@
         <span class="back_txt">뒤로가기</span>
       </button>
       <div class="player_wrap">
-        <button type="button" class="player_play"><i class="fa fa-play" aria-hidden="true"></i></button>
-        <button type="button" class="player_pause"><i class="fa fa-pause" aria-hidden="true"></i></button>
-        <button type="button" class="player_back"><i class="fa fa-backward" aria-hidden="true"></i></button>
-        <button type="button" class="player_forward"><i class="fa fa-forward" aria-hidden="true"></i></button>
+        <button type="button" class="player_play">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="player_pause">
+          <i class="fa fa-pause" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="player_back">
+          <i class="fa fa-backward" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="player_forward">
+          <i class="fa fa-forward" aria-hidden="true"></i>
+        </button>
         <div class="player_title">넷플릭스 샘플 재생</div>
         <button type="button" class="player_question">
           <i class="fa fa-question-circle-o" aria-hidden="true"></i>
@@ -61,12 +69,26 @@
         </button>
         <button type="button" class="player_screen"><i class="fa fa-arrows-alt" aria-hidden="true"></i></button>
       </div>
-      <!-- 버튼과 마찬가지로 play를 누르면 play되게 -->
+      <!-- 버튼과 마찬가지로 화면을 누르면 play, pause기능 -->
       <div class="back_play"></div>
       <div class="back_pause"></div>
+      <!-- 버튼 눌렀을때 화면 가운데 버튼 잠깐 나왔다 사라지는 효과 -->
+      <div class="center_play">
+        <i class="fa fa-play" aria-hidden="true"></i>
+      </div>
+      <div class="center_pause">
+        <i class="fa fa-pause" aria-hidden="true"></i>
+      </div>
+      <div class="center_back">
+        <i class="fa fa-backward" aria-hidden="true"></i>
+      </div>
+      <div class="center_forward">
+        <i class="fa fa-forward" aria-hidden="true"></i>
+      </div>
     </div>
     <!-- //video_controller -->
   </div>
+  <!-- //wrap -->
   <!-- use script(jQuery) -->
   <script src="../../js/src/project/video_netflix.js"></script>
 </body>
