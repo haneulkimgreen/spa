@@ -74,26 +74,37 @@ body,html{width: 100%; height: 100%;}
 }
 .buy_icon{
   background-size: 70%;
-  background-position: center;
+  background-position: 7px center;
   background-image: url('../../../../img/mong/main_buy_icon.png');
 }
 .use_icon{
-  background-size: 70%;
-  background-position: 10px center;
+  background-size: 60%;
+  background-position: 14px center;
   background-image: url('../../../../img/mong/main_use_icon.png');
 }
 .buy_count,
 .use_count{
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   top: 0;
   left: 0;
-  border-radius: 50%;
+  margin-top: -5px;
   font-size: 12px;
   line-height: 24px;
   text-align: center;
-  background-color: rgba(255, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.8;
+}
+.buy_count{
+  background-image: url('../../../../img/mong/tag.png');
+}
+.use_count{
+  width: 26px;
+  line-height: 30px;
+  background-image: url('../../../../img/mong/bell.png');
 }
 .buy_ticket dl,
 .use_ticket dl{
@@ -207,25 +218,37 @@ body,html{width: 100%; height: 100%;}
 }
 .buy_icon{
   background-size: 70%;
-  background-position: center;
+  background-position: 10px center;
   background-image: url('../../../../img/mong/main_buy_icon.png');
 }
 .use_icon{
-  background-size: 70%;
-  background-position: 10px center;
+  background-size: 60%;
+  background-position: 16px center;
   background-image: url('../../../../img/mong/main_use_icon.png');
 }
 .buy_count,
 .use_count{
   position: absolute;
-  width: 28px;
-  height: 28px;
+  width: 40px;
+  height: 40px;
   top: 0;
   left: 0;
   border-radius: 50%;
   line-height: 28px;
   text-align: center;
-  background-color: rgba(255, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.8;
+}
+.buy_count{
+  margin-top: -10px;
+  background-image: url('../../../../img/mong/tag.png');
+}
+.use_count{
+  margin-top: -10px;
+  line-height: 40px;
+  background-image: url('../../../../img/mong/bell.png');
 }
 .buy_ticket dl,
 .use_ticket dl{
@@ -339,25 +362,37 @@ body,html{width: 100%; height: 100%;}
 }
 .buy_icon{
   background-size: 70%;
-  background-position: center;
+  background-position: 14px center;
   background-image: url('../../../../img/mong/main_buy_icon.png');
 }
 .use_icon{
-  background-size: 70%;
-  background-position: 10px center;
+  background-size: 55%;
+  background-position: 26px center;
   background-image: url('../../../../img/mong/main_use_icon.png');
 }
 .buy_count,
 .use_count{
   position: absolute;
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   top: 0;
   left: 0;
   border-radius: 50%;
   line-height: 36px;
   text-align: center;
-  background-color: rgba(255, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.8;
+}
+.buy_count{
+  margin-top: -5px;
+  background-image: url('../../../../img/mong/tag.png');
+}
+.use_count{
+  margin-top: -10px;
+  line-height: 50px;
+  background-image: url('../../../../img/mong/bell.png');
 }
 .buy_ticket dl,
 .use_ticket dl{
