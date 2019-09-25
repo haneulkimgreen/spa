@@ -1,6 +1,7 @@
 // video_netflix.js
 (function($) {
   // var videoSample = $('#videoSample');
+  var video_controller = $('.video_controller');
   var playerPlay = $('.player_play');
   var playerPause = $('.player_pause');
   var playerBack = $('.player_back');
@@ -24,6 +25,7 @@
     back_play.hide();
     back_pause.show();
     center_play.stop().fadeIn(500).fadeOut(500);
+    video_controller.addClass('play_con');
   });
   // 정지 버튼
   playerPause.on('click', function(e){
@@ -34,6 +36,7 @@
     back_pause.hide();
     back_play.show();
     center_pause.stop().fadeIn(500).fadeOut(500);
+    video_controller.removeClass('play_con');
   });
   // 10초 뒤로 버튼
   playerBack.on('click', function(e){
@@ -56,6 +59,7 @@
     playerPlay.hide();
     playerPause.show();
     center_play.stop().fadeIn(500).fadeOut(500);
+    video_controller.addClass('play_con');
   });
   // 배경 누르면 정지됨
   back_pause.on('click', function(e){
@@ -66,6 +70,38 @@
     playerPause.hide();
     playerPlay.show();
     center_pause.stop().fadeIn(500).fadeOut(500);
+    video_controller.removeClass('play_con');
+  });
+  // 키보드 제어
+  $(document).keyup(function(e) {
+  if (event.keyCode == '37') {
+    videoSample.currentTime -= 10;
+    center_back.stop().fadeIn(500).fadeOut(500);
+  }else if(event.keyCode == '39') {
+    videoSample.currentTime += 10;
+    center_forward.stop().fadeIn(500).fadeOut(500);
+  }else if(event.keyCode == '32') {
+    // 스페이스바는 정지, 재생 상태에 따라 다른 효과를 줘야함. 조건에 &&시 계속 중복 또는 오류남. 키코드 32안에서 다시 조건문 해야 오류가 안남.
+    if(video_controller.hasClass("play_con") === true){
+      // 플레이상태. 플레이상태에서 스페이스바 이므로 정지
+      videoSample.pause();
+      playerPause.hide();
+      playerPlay.show();
+      back_pause.hide();
+      back_play.show();
+      center_pause.stop().fadeIn(500).fadeOut(500);
+      video_controller.removeClass('play_con');
+    }else{
+      // 나머지 이므로 정지상태. 정지상태에서 스페이스바 이므로 플레이
+      videoSample.play();
+      back_play.hide();
+      back_pause.show();
+      playerPlay.hide();
+      playerPause.show();
+      center_play.stop().fadeIn(500).fadeOut(500);
+      video_controller.addClass('play_con');
+    }
+  }
   });
 
 })(jQuery);
