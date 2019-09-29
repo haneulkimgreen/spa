@@ -1,0 +1,57 @@
+/* range_slider_custom_01 .css */
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #222;
+}
+div{
+  position: relative;
+}
+#rangeValue{
+  position: absolute;
+  top: 2px;
+  right: -60px;
+  padding: 2px;
+  width: 50px;
+  box-sizing: border-box;
+  background-color: #fff;
+  text-align: center;
+}
+#rangeValue:before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+.range{
+  width: 400px;
+  height: 2px;
+  background-color: #111;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 2px;
+}
+.range::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #00bcd4;
+}
+
+
+
+
+/* 세모 만들기, transform: translate,translateY에 대해 공부할것. */
+/* 브라우저의 input 기본 디자인을 바꾸는 것들인듯?? 알아볼것. */
+/* -webkit-appearance: none; */
+/* .range::-webkit-slider-thumb */
+/* js해석할것 */
