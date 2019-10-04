@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- css_blend.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--[if lte IE9]>
+  <script src="../js/base/html5shiv-printshiv.js"></script>
+  <script src="../js/base/html5shiv.js"></script>
+  <![endif]-->
+  <!--[if IE]>
+  <![endif]-->
+  <!-- fontAwesome and Font -->
+  <link rel="stylesheet" href="../../fontAwesome/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <!-- css Reset and globalClass -->
+  <link rel="stylesheet" href="../../css/base/reset.css">
+  <link rel="stylesheet" href="../../css/base/common.css">
+  <!-- use css -->
+  <link rel="stylesheet" href="../../css/src/project/css_blend.css">
+  <!-- faviconFile -->
+  <!-- <link rel="apple-touch-icon" href="../img/main/favicon.png"> -->
+  <!-- <link rel="shortcut icon" href="../img/main/favicon.png" type="image/x-icon"> -->
+  <title>css_blend</title>
+
+</head>
+<body>
+  <div class="wrap">
+    <section>
+      <p class="title center">css blend(background-blend-mode, mix-blend-mode)</p>
+      <p class="content center">css에서 이미지 포토샵 효과, 이미지 위에 컨텐트에 효과를 줄 수 있음.</p>
+      <p class="content center">생활코딩 설명 https://www.opentutorials.org/course/2418/13667</p>
+    </section>
+    <section class="section_01">
+      <p class="title">mix-blend-mode</p>
+      <p class="content">scroll_back_effect에서 활용</p>
+      <p class="content">scroll_back_effect를 이용해 fixed로 고정된 이미지 배경 위를 컨텐트가 지나갈때 효과를 주었음.</p>
+      <p class="content">검은 배경 위를 지나갈때 글자 색이 흰색으로 바뀜.</p>
+      <p class="content">배경에 css mix-blend-mode: difference;</p>
+      <pre class="content">
+
+속성 정보
+https://developer.mozilla.org/ko/docs/Web/CSS/mix-blend-mode
+   Keyword values 
+mix-blend-mode: normal;
+mix-blend-mode: multiply;
+mix-blend-mode: screen;
+mix-blend-mode: overlay;
+mix-blend-mode: darken;
+mix-blend-mode: lighten;
+mix-blend-mode: color-dodge;
+mix-blend-mode: color-burn;
+mix-blend-mode: hard-light;
+mix-blend-mode: soft-light;
+mix-blend-mode: difference;
+mix-blend-mode: exclusion;
+mix-blend-mode: hue;
+mix-blend-mode: saturation;
+mix-blend-mode: color;
+mix-blend-mode: luminosity;
+
+   Global values 
+mix-blend-mode: initial;
+mix-blend-mode: inherit;
+mix-blend-mode: unset;
+      </pre>
+    </section>
+    <section class="section_02">
+      <p class="title">background-blend-mode</p>
+      <p class="content">이미지 css에 background-blend-mode를 사용하여 이미지에 효과</p>
+    </section>
+    <div class="ex_area">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </div>
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- <script src="../js/base/jquery-3.2.1.js"></script> -->
+  <!-- <script src="../js/base/jquery-ui.js"></script> -->
+  <!-- use script(jQuery) -->
+  <!-- <script src="../../js/src/project/basic_txt.js"></script> -->
+</body>
+</html>

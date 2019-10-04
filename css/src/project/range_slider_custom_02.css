@@ -1,0 +1,52 @@
+/* range_slider_custom_02 .css */
+*{
+  margin: 0;
+  padding: 0; 
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #151515;
+}
+div{
+  position: relative;
+}
+#rangeValue{
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 6em;
+  color: #999;
+  font-weight: 400;
+}
+.range{
+  width: 400px;
+  height: 15px;
+  -webkit-appearance: none;
+  background-color: #111;
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+}
+.range::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #00fd0a;
+  cursor: pointer;
+  border: 4px solid #333;
+  box-shadow: -407px 0 0 400px #00fd0a;
+}
+
+
+/* range_slider_custom_01과 동일한 것들 */
+/* 게이지 차는걸 
+.range::-webkit-slider-thumb에 box-shadow: -407px 0 0 400px #00fd0a;와 
+인풋.range에 overflow: hidden;로 효과줌. */
+/*  */
+/*  */
+/*  */
