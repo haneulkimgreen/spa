@@ -1,0 +1,186 @@
+/* stylenanda_rwd .css */
+/*body,html{width: 100%; height: 100%;}
+body::-webkit-scrollbar{
+  width: 20px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #d99f9d;
+}
+.wrap{
+  width: 100%;
+  height: 100%;
+}
+.wrap::after{
+  content:" ";
+  display:block;
+  clear:both;
+}*/
+#headBox{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+#headBox h1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 60px;
+  margin-left: 60px;
+  width: 22px;
+  height: 190px;
+}
+#headBox h1 a{
+  display: block;
+  width: 22px;
+  height: 190px;
+  background-image: url('../../../img/stylenanda/logo_img.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+.menu_btn{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  margin-top: 60px;
+  margin-right: 60px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255,255,255,0);
+}
+.menu_btn span{
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  transition: all 500ms ease;
+}
+.menu_btn span::before{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -13px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  transition: all 500ms ease;
+}
+.menu_btn span::after{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  transition: all 500ms ease;
+}
+.menu_btn.menu_on span{
+  background-color: rgba(255,255,255,0);
+}
+.menu_btn.menu_on span::before{
+  top: 0;
+  transform: rotateZ(45deg);
+}
+.menu_btn.menu_on span::after{
+  top: 0;
+  transform: rotateZ(-45deg);
+}
+section{
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.back_01{
+  background-image: url('../../../img/stylenanda/back_01.jpg');
+}
+.back_02{
+  background-image: url('../../../img/stylenanda/back_02.jpg');
+}
+.back_03{
+  background-image: url('../../../img/stylenanda/back_03.jpg');
+}
+.back_04{
+  background-image: url('../../../img/stylenanda/back_04.jpg');
+}
+.back_05{
+  background-image: url('../../../img/stylenanda/back_05.jpg');
+}
+.modal_menu{
+  display: none;
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #d99f9d;
+}
+.modal_menu ul{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 55px;
+}
+.modal_menu ul li{
+  margin-right: 10px;
+}
+.modal_menu ul li:nth-last-of-type(1){
+  margin-right: 0;
+}
+.modal_menu ul li a{
+  display: inline-block;
+  padding: 0 40px;
+  box-sizing: border-box;
+  line-height: 55px;
+  font-weight: bold;
+  color: #101010;
+}
+.modal_menu ul li a:hover{
+  color: #efd6c0;
+  text-decoration: underline;
+}
+.border_top{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 0;
+  background-color: #d99f9d;
+}
+.border_bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 0;
+  background-color: #d99f9d;
+}
+.border_left{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  background-color: #d99f9d;
+}
+.border_right{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100vh;
+  background-color: #d99f9d;
+}
