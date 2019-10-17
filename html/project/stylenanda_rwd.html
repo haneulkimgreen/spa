@@ -12,25 +12,66 @@
   <!--[if IE]>
   <![endif]-->
   <!-- fontAwesome and Font -->
-  <link rel="stylesheet" href="../../fontAwesome/css/font-awesome.css">
+  <!-- <link rel="stylesheet" href="../../fontAwesome/css/font-awesome.css"> -->
   <!-- css Reset and globalClass -->
   <link rel="stylesheet" href="../../css/base/reset.css">
   <link rel="stylesheet" href="../../css/base/common.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../../package_swiper/swiper.min.css">
   <!-- use css -->
   <link rel="stylesheet" href="../../css/src/project/stylenanda_rwd.css">
   <!-- faviconFile -->
-  <!-- <link rel="apple-touch-icon" href="../img/main/favicon.png"> -->
-  <!-- <link rel="shortcut icon" href="../img/main/favicon.png" type="image/x-icon"> -->
+  <link rel="apple-touch-icon" href="../../img/favicon.png">
+  <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <title>stylenanda_rwd</title>
 
 </head>
 <body>
-  <div class="wrap">
-    stylenanda_rwd
+  <!-- 스와이퍼 배너, 세로버전, 스크롤가능, 인디케이터 가능버전 -->
+  <!-- css 1개, 클래스 네임 준수, 스크립트 1개, 스크립트 html에 작성 전부 지킬것. -->
+  <!-- 예시 https://swiperjs.com/demos/270-mousewheel-control.html -->
+  <!-- 코드 https://github.com/nolimits4web/Swiper/blob/master/demos/270-mousewheel-control.html -->
+  <div class="wrap swiper-container">
+    <div class="swiper-wrapper">
+      <section class="section_01 swiper-slide">1</section>
+      <section class="section_02 swiper-slide">2</section>
+      <section class="section_03 swiper-slide">3</section>
+      <section class="section_04 swiper-slide">4</section>
+      <section class="section_05 swiper-slide">5</section>
+    </div>
+    <div class="swiper-pagination"></div>
   </div>
-  <!-- script -->
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- Swiper JS -->
+  <script src="../../package_swiper/swiper.min.js"></script>
+  <!-- Initialize Swiper -->
+  <!-- 마우스휠 가능한것  -->
+  <script>
+  var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+  });
+  </script>
+
+  <!-- 마우스휠 불가능한것
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+  -->
   <!-- use script(jQuery) -->
   <script src="../../js/src/project/stylenanda_rwd.js"></script>
 </body>

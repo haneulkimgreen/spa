@@ -36,7 +36,7 @@
   //   border_right.stop().animate({'width':'0'});
   // });
 
-  // // 스크롤 마우스
+  // 스크롤 마우스
   // var win_h = $(window).height();
   // $("html, body").stop().animate({scrollTop:0}, 500, 'swing');
   // $('.section').each(function(index){
