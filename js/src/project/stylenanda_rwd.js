@@ -37,21 +37,21 @@
   // });
 
   // 스크롤 마우스
-  // var win_h = $(window).height();
-  // $("html, body").stop().animate({scrollTop:0}, 500, 'swing');
-  // $('.section').each(function(index){
-  //   $(this).attr("data-index", win_h * index);
-  // });
+  var win_h = $(window).height();
+  $("html, body").stop().animate({scrollTop:0}, 500, 'swing');
+  $('.section').each(function(index){
+    $(this).attr("data-index", win_h * index);
+  });
 
-  // $('.section').on('mousewheel DOMMouseScroll', function(e){
-  //   var sectionPos = parseInt($(this).attr("data-index"));
-  //   if(e.originalEvent.wheelDelta >= 0){
-  //     $("html,body").stop().animate({scrollTop:sectionPos - win_h}, 500, 'easeInCubic');
-  //     return false;
-  //   }else if(e.originalEvent.wheelDelta < 0){
-  //     $("html,body").stop().animate({scrollTop:sectionPos + win_h}, 500, 'easeInCubic');
-  //     return false;
-  //   }
-  // });
+  $('.section').on('mousewheel DOMMouseScroll', function(e){
+    var sectionPos = parseInt($(this).attr("data-index"));
+    if(e.originalEvent.wheelDelta >= 0){
+      $("html,body").stop().animate({scrollTop:sectionPos - win_h}, 500, 'easeInCubic');
+      return false;
+    }else if(e.originalEvent.wheelDelta < 0){
+      $("html,body").stop().animate({scrollTop:sectionPos + win_h}, 500, 'easeInCubic');
+      return false;
+    }
+  });
   
 })(this.jQuery);

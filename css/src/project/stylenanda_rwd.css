@@ -26,6 +26,7 @@ section{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 @media screen and (max-width: 768px){
 .section_01{
