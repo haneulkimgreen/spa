@@ -53,5 +53,16 @@
       return false;
     }
   });
+  // 파이어폭스. DOMMouseScroll, detail, 스크롤 +-, 3(다른건 120)
+  $('.section').on('DOMMouseScroll', function(e){
+    var sectionPos = parseInt($(this).attr("data-index"));
+    if(e.originalEvent.detail >= 0){
+      $("html,body").stop().animate({scrollTop:sectionPos + win_h}, 500, 'easeInCubic');
+      return false;
+    }else if(e.originalEvent.detail < 0){
+      $("html,body").stop().animate({scrollTop:sectionPos - win_h}, 500, 'easeInCubic');
+      return false;
+    }
+  });
   
 })(this.jQuery);
