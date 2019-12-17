@@ -1,0 +1,122 @@
+/* utu_christmas.css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001f00;
+  overflow: hidden;
+}
+body:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background-color: #fff;
+}
+/*.tree{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0,0,0,0.1);
+}
+.tree:before{
+  content: '';
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.1);
+}
+.tree:after{
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 40px;
+  background-color: #734500;
+}
+.tree div{
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  display: flex;
+}
+.tree div span{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}*/
+@keyframes animate{
+  0%{ background-position: 0 0; }
+  100%{ background-position: 0 506px; }
+
+}
+.snow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.snow .snow01{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/snow.png');
+  z-index: 1000;
+  mix-blend-mode: screen;
+  animation: animate 2s linear infinite;
+  transform: scale(2);
+}
+.snow .snow02{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/snow.png');
+  z-index: 1000;
+  mix-blend-mode: screen;
+  animation: animate 5s linear infinite;
+  transform: scale(1);
+  filter: blur(1px);
+}
+.snow .snow03{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/snow.png');
+  z-index: 1000;
+  mix-blend-mode: screen;
+  animation: animate 5s linear infinite;
+  transform: scale(1.5);
+}
+.tree{
+  width: 500px;
+  height: 500px;
+  background-image: url('../../../img/tree.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 100;
+}
