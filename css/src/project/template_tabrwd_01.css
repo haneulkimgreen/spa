@@ -1,0 +1,224 @@
+/* template_tabrwd_01 .css */
+/* reset.css */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+html,body{
+  margin:0; padding:0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p,pre,ul,ol,li,dl,dt,dd,div,
+table,thead,tbody,tfoot,tr,th,td,
+form,fieldset,legend,input,textarea,select
+a,img,figcaption,figure,address,button,
+header, nav, article, section, footer, aside, main, figure, figcaption, picture, hr{
+  margin: 0; padding: 0; border: 0; outline:0; color:inherit; font-size:inherit; font-family: inherit;
+}
+ul,ol,li,dl{
+  list-style: none;
+}
+a, button{
+  text-decoration: none;
+}
+/* //reset.css */
+.wrap{
+  width: 100%;
+  height: auto;
+}
+#headBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 960px;
+  height: 200px;
+  margin: 0 auto;
+}
+#headBox h1{
+  width: 230px;
+  height: 100px;
+}
+#headBox h1 a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url('../../../img/template_tabrwd_01/logo.png');
+}
+#headBox h1 a span{
+  display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;
+}
+#gnb{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  border-top: 2px solid #000;
+}
+#gnb ul{
+  width: auto;
+  height: 100%;
+}
+#gnb ul li{
+  float: left;
+  width: auto;
+  height: 100%;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+#gnb ul li a{
+  display: inline-block;
+  height: 40px;
+  padding: 0 60px;
+  box-sizing: border-box;
+  line-height: 40px;
+  color: #aaa;
+  border-right: 2px solid #000;
+}
+#gnb ul li:nth-last-child(1) a{
+  border: 0;
+}
+#gnb ul li a:hover{
+  color: #000;
+}
+/* 클릭시 탭메뉴가 나오며 메뉴버튼의 글자 색도 바뀐다. 나머지 형제 li태그의 클래스click은 없애 메뉴버튼 중 선택받은 하나만 글자색이 다른걸 유지한다. */
+#gnb ul li.click a{
+  color: #000;
+}
+#contentBox_01{
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+}
+.banner_wrap{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 540px;
+}
+.banner_ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*margin-left: -300%;*/
+  /*width: 400%;*/
+  height: 100%;
+}
+.banner_ul li{
+  float: left;
+  /*width: 25%;*/
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner_ul li:nth-child(1){
+  background-image: url('../../../img/template_tabrwd_01/main_img01.jpg');
+}
+.banner_ul li:nth-child(2){
+  background-image: url('../../../img/template_tabrwd_01/main_img02.jpg');
+}
+.banner_ul li:nth-child(3){
+  background-image: url('../../../img/template_tabrwd_01/main_img03.jpg');
+}
+.banner_ul li:nth-last-child(1){
+  background-image: url('../../../img/template_tabrwd_01/main_img01.jpg');
+}
+.banner_ul li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner_ul li a span{
+  /*display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;*/
+}
+
+
+
+
+.text_wrap{
+  width: 100%;
+  height: 300px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.text_b{
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 70px;
+}
+.text_basic{
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#contentBox_02{
+  display: none;
+  width: 960px;
+  /*height: auto;*/
+  height: 1000px;
+  margin: 0 auto;
+  background-color: #aff;
+}
+#contentBox_03{
+  display: none;
+  width: 960px;
+  /*height: auto;*/
+  height: 1000px;
+  margin: 0 auto;
+  background-color: #faf;
+}
+#contentBox_04{
+  display: none;
+  width: 960px;
+  /*height: auto;*/
+  height: 1000px;
+  margin: 0 auto;
+  background-color: #ffa;
+}
+#footBox{
+  width: 100%;
+  height: 140px;
+  border-top: 2px solid #000;
+}
+.footBox_wrap{
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.footer_info{
+  float: left;
+}
+.footer_info address a{
+  color: #000;
+  font-style: normal;
+}
+.footer_sns{
+  float: right;
+  width: 100px;
+  height: 60px;
+}
+.footer_sns .face{
+  display: inline-block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../../../img/template_tabrwd_01/icon_facebook.png');
+}
+.footer_sns .youtu{
+  display: inline-block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../../../img/template_tabrwd_01/icon_youtube.png');
+}
