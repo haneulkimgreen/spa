@@ -1,0 +1,376 @@
+/* template_Slide-in-on-Scroll.css */
+/* reset.css */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+html,body{
+  margin:0; padding:0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p,pre,ul,ol,li,dl,dt,dd,div,
+table,thead,tbody,tfoot,tr,th,td,
+form,fieldset,legend,input,textarea,select
+a,img,figcaption,figure,address,button,
+header, nav, article, section, footer, aside, main, figure, figcaption, picture, hr{
+  margin: 0; padding: 0; border: 0; outline:0; color:inherit; font-size:inherit; font-family: inherit;
+}
+ul,ol,li,dl{
+  list-style: none;
+}
+a, button{
+  text-decoration: none;
+}
+/* //reset.css */
+.hidden_txt{
+  display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;
+}
+html,body{
+  width: 100%; height: 100%;
+}
+.wrap{
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  transition: all 2000ms ease;
+}
+.wrap.animate_back{
+  background-color: #dbedef;
+}
+#headBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: #ddd;
+}
+#headBox a{
+  display: inline-block;
+  width: 600px;
+}
+.section_01{
+  width: 1200px;
+  height: 540px;
+  margin: 0 auto;
+}
+.sec01_img{
+  float: left;
+  width: 50%;
+  height: 540px;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  background-image: url('../../../img/template_Slide-in-on-Scroll/sec01_img01.jpg');
+  background-color: #ddd;
+}
+.sec01_img.animate_img{
+  /* js로 지정, 생성 되자마자 */
+  background-position: center;
+  transition: all 1000ms ease;
+}
+.sec01_txt{
+  float: right;
+  width: 50%;
+  height: 700px;
+  margin-top: 130px;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+.sec01_p01{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 64px;
+}
+.sec01_p01 p{
+  position: absolute;
+  /* js로 지정, 생성 되자마자 */
+  /*top: 0;*/
+  top: 56px;
+  left: 0;
+}
+.sec01_p02{
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  width: 100%;
+  height: 52px;
+  font-size: 18px;
+}
+.sec01_p02 p{
+  position: absolute;
+  /* js로 지정, 생성 되자마자 */
+  /*top: 0;*/
+  top: 52px;
+  left: 0;
+}
+.section_02{
+  position: relative;
+  width: 1200px;
+  height: 860px;
+  margin: 0 auto;
+}
+.sec02_img_wrap{
+  overflow: hidden;
+  position: absolute;
+  top: 360px;
+  left: 60px;
+  margin-top: 250px;
+  width: 540px;
+  height: 360px;
+}
+.sec02_img{
+  position: absolute;
+  top: -360px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../../img/template_Slide-in-on-Scroll/sec02_img01.jpg');
+}
+.sec02_img_wrap.animate_img{
+  /* js로 지정, 스크롤 */
+  top: 0;
+  transition: all 1000ms ease;
+}
+.sec02_img.animate_img{
+  /* js로 지정, 스크롤 */
+  top: 0;
+  transition: all 1000ms ease;
+}
+.sec02_txt{
+  position: absolute;
+  top: 180px;
+  left: 0;
+  margin-left: 720px;
+  z-index: 100;
+}
+.sec02_p01{
+  font-size: 60px;
+  font-family: 'Roboto';
+  font-weight: 100;
+}
+.sec02_p02{
+  margin-top: 20px;
+  font-size: 18px;
+}
+.circle{
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: 0;
+  right: 0;
+  margin-top: -100px;
+  margin-right: -160px;
+}
+/*
+stroke-dasharray : path 전체의 길이 값
+stroke-dashoffset : path의 시작점
+*/
+.circle circle{
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 36px;
+  stroke: #eaeaea;
+  stroke-dasharray: 1800;
+  stroke-dashoffset: 1800;
+  transform: rotateZ(-90deg);
+  transition: all 1000ms ease;
+}
+.circle circle.animate{
+  /* js로 지정, 스크롤 */
+  stroke-dashoffset: 0;
+}
+.section_03{
+  position: relative;
+  width: 1200px;
+  height: 1150px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+  box-sizing: border-box;
+}
+.sec03_txt{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sec03_p01{
+  font-size: 60px;
+  font-family: 'Roboto';
+  font-weight: 100;
+}
+.sec03_p02{
+  margin-top: 20px;
+  font-size: 18px;
+}
+.sec03_img01_wrap{
+  overflow: hidden;
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  width: 0;
+  height: 700px;
+}
+.sec03_img02_wrap{
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 560px;
+  width: 0;
+  height: 760px;
+}
+.sec03_img01{
+  width: 460px;
+}
+.sec03_img02{
+  width: 640px;
+}
+.sec03_img01_wrap.animate_img{
+  /* js로 지정, 스크롤 */
+  width: 460px;
+  transition: all 1000ms ease;
+}
+.sec03_img02_wrap.animate_img{
+  /* js로 지정, 스크롤 */
+  width: 640px;
+  transition: all 1000ms ease;
+}
+.section_04{
+  position: relative;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vw;
+  background-color: #ddd;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../../img/template_Slide-in-on-Scroll/sec04_img01.jpg');
+}
+.sec04_p01{
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+}
+.sec04_p01 span{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+}
+.section_05{
+  position: relative;
+  width: 1200px;
+  height: 1200px;
+  margin: 0 auto;
+  /*background-color: #aaa;*/
+}
+.circle_02{
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  top: 0;
+  left: 0;
+  margin-top: -100px;
+  z-index: 100;
+}
+.circle_02 circle{
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 36px;
+  stroke: #eaeaea;
+  stroke-dasharray: 2400;
+  stroke-dashoffset: 2200;
+  transform: rotateZ(-90deg);
+  transition: all 1000ms ease;
+}
+.circle_02 circle.animate{
+  /* js로 지정, 스크롤 */
+  stroke-dashoffset: 0;
+}
+.sec05_img01{
+  /*display: none;*/
+  position: absolute;
+  z-index: 300;
+  top: 200px;
+  left: -300px;
+  width: 460px;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../../img/template_Slide-in-on-Scroll/sec05_img01.jpg');
+}
+.sec05_txt{
+  position: absolute;
+  z-index: 300;
+  top: 400px;
+  left: 690px;
+}
+.sec05_p01{
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 100;
+}
+.sec05_p02{
+  margin-top: 20px;
+  font-size: 18px;
+}
+#footBox{
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;
+}
+.foot_wrap{
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.foot_wrap address{
+  margin-top: 80px;
+  float: left;
+}
+.foot_wrap address a{
+  font-style: normal;
+  color: #000;
+}
+.footer_sns{
+  float: right;
+  margin-top: 80px;
+  width: 110px;
+  height: 40px;
+}
+.footer_sns a{
+  display: inline-block;
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+.footer_sns a:nth-last-child(1){
+  margin-left: 30px;
+}
+.face{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../../img/template_Slide-in-on-Scroll/icon_facebook.png');
+  background-color: #fff;
+}
+.youtu{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../../img/template_Slide-in-on-Scroll/icon_youtube.png');
+}
