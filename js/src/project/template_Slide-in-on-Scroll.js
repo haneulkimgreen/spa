@@ -21,6 +21,8 @@
   var circleIn_02_offtop = circle_02.children('circle').offset().top;
   var sec05_img01 = $('.sec05_img01');
   var sec05_img01_offtop = sec05_img01.offset().top;
+  var section_06 = $('.section_06');
+  var section_06_offtop = section_06.offset().top;
 
 
   // section01의 컨텐츠. 시작하자마자, 새로고침 했을때 효과
@@ -60,20 +62,20 @@
       sec05_img01.animate({left: '170px'}, 500);
     }
 
-    // console.log(sec05_img01_offtop);
+    if( winscrollTop >= section_06_offtop-300 ){
+      section_06.addClass('animate');
+    }
+
+    // console.log(section_06_offtop);
     // console.log(winscrollTop);
   });
 
   // 로고 효과
   var pathes = $('#headBox').find('path');
     pathes.each(function( i, path ) {
-        // 1번 부분
         var total_length = path.getTotalLength();
-        // 2번 부분
         path.style.strokeDasharray = total_length + " " + total_length;
-        // 3번 부분
         path.style.strokeDashoffset = total_length;
-        // 4번 부분
         $(path).animate({
             "strokeDashoffset" : 0
         }, 1000);
