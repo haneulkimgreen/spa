@@ -2,6 +2,7 @@
 /* reset.css */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://www.fontify.me/wf/822845a211e250d3989a107203e72537');
 /*@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');*/
 html,body{
   margin:0; padding:0;
@@ -335,7 +336,8 @@ stroke-dashoffset : path의 시작점
   height: 100vh;
   margin: 0 auto;
   /*font-family: 'Poppins';*/
-  font-family: "Helvetica Neue";
+  /*font-family: "Helvetica Neue";*/
+  font-family: font36452;
   font-size: 200px;
   font-weight: 900;
   text-transform: uppercase;
